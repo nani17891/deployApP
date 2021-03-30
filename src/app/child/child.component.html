@@ -1,0 +1,19 @@
+<div><h2 style="text-align: center;">
+    this is child component-{{uname}}
+</h2>
+<button (click)="passData()">send data</button>
+<button (click)="sum()">add</button>
+<button (click)="subtract()">sub</button>
+<button (click)="sendingArray()">sendArray</button>
+
+
+<h2>customer details</h2>
+<ul *ngFor="let cust of customers">
+    <li>{{cust.custName}}</li>
+</ul></div>
+<div>
+<ul *ngFor = "let i of masterArray1">
+    <li>{{i}}</li>
+  </ul>
+  
+</div>

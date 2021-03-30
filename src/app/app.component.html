@@ -1,0 +1,15 @@
+<div>
+  <h1 style="text-align: center;">parent component-child component</h1>
+  <p>{{childData}}</p>
+  <p>{{x}}</p>
+  <p>{{y}}</p>
+
+    <ul *ngFor="let cust2 of childData1">
+      <li>{{cust2}}</li>
+    </ul>
+    
+  
+  <app-child [uname]="username" (notify)="parentMethod($event)" (addNum)="increment($event)" (subNum)="decrement($event)"
+   [masterArray1]="masterArray"
+   (data)="eventHandler($event)"></app-child>
+</div>
